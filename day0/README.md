@@ -19,11 +19,11 @@
 - You can change the default by setting `$GOPATH` environment variable.
 - Some online resources tell you to set the `$GOROOT` environment variable. This variable specifies the location where your Go development environment is installed. This is no longer necessary; the `go` tool figures this out automatically.
 
-## The go Command
+## The `go` Command
 - Go ships with many developmental tools.
 - The `go` command is the entry point to all of these tools.
 - They include a compiler, code formatter, linter, dependency manager, test runner, and more.
-### go run and go build
+### `go run` and `go build`
 - `go run` and `go build` take in either single file, list of files or the name of the package.
 - `go run` runs the main function of the package.
 - `go build` compiles the package and builds a binary.
@@ -43,3 +43,31 @@
 - `go install` will install the package into your `$GOPATH/bin` directory.
 - Go’s method for publishing code is a bit different than most other languages. Go developers don’t rely on a centrally hosted service, like Maven Central for Java or the NPM registry for JavaScript. Instead, they share projects via their source code repositories.
 - The `go install` command takes an argument, which is the location of the source code repository of the project you want to install, followed by an `@` and the version of the tool you want (if you just want to get the latest version, use `@latest`). It then downloads, compiles, and installs the tool into your `$GOPATH/bin` directory.
+
+### Formatting code
+- You can use the `go fmt` command to format your code.
+- It automatically formats your code to match the standard format.
+- There is a enhanced version of `go fmt` called `goimports`.
+- `goimports` automatically imports your code into the standard format. Removes unused imports, arranges in alphabetical order, and attempts to guess any unspecified imports.
+- Install `go imports` by running:
+     - `go install golang.org/x/tools/cmd/goimports@latest`
+- Run it `goimports -l -w .` to format your code.
+- The `-l` flag tells goimports to print the files with incorrect formatting to the console. The `-w` flag tells goimports to modify the files in-place. The `.` specifies the files to be scanned: everything in the current directory and all of its subdirectories.
+
+### Semicolon insertion rule
+- Like C or Java, Go requires a semicolon at the end of every statement. 
+- However, Go developers never put the semicolons in themselves; the Go compiler does it for them following a very simple rule described in [Effective Go](https://go.dev/doc/effective_go#semicolons).
+- If the last token before a newline is any of the following, the lexer inserts a semicolon after the token:
+     - An identifier (which includes words like `int` and `float64`)
+     - A basic literal such as a number or string constant
+     - One of the tokens: `break`, `continue`, `fallthrough`,`return`, `++`, `--`, `)`, or `}`
+
+### Linting and Vetting
+- `go fmt` and `go lint` are two of the most important tools in the Go ecosystem.
+- `go fmt` is used to format your code.
+- [Go Code Review Comments](https://github.com/golang/go/wiki/CodeReviewComments)
+- `golint` tries to ensure your code is well-formed and follows the style guidelines
+- `golint ./...` will lint the current directory and all of its subdirectories.
+- `go vet` is a tool that checks for common mistakes in Go code. Includes things like passing the wrong number of parameters to formatting methods or assigning values to variables that are never used.
+- `golangci-lint` combines `golint` and `go vet` into a single tool and an ever-increasing set of other code quality tools
+- 
