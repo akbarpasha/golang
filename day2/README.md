@@ -2,7 +2,7 @@
 
 - The Go programming language was designed upfront with concurrency in mind. Its concurrency model is based on **Communicating Sequential Processes** (CSP).
 - The CSP model is a concurrency paradigm that relies on *message passing*. Instead of having to share memory, processes will communicate by exchanging messages through *channels*.
-- ![image-20220315232023297](/Users/akbar/Workspace/golang/day2/image-20220315232023297.png)
+- ![image-20220315232023297](./image-20220315232023297.png)
 
 - Go implements the CSP model with two primitives: the *goroutine* and the *channel*
 
@@ -12,7 +12,7 @@
 
 - One goroutine belongs to one thread at a time, and one thread can handle multiple goroutines.
 
-- ![image-20220315232803751](/Users/akbar/Workspace/golang/day2/image-20220315232803751.png)
+- ![image-20220315232803751](./image-20220315232803751.png)
 
   
 
