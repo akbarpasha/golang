@@ -4,4 +4,5 @@ This is not a complete tutorial, but a series of lessons that helped me learn go
 
 ## Days
 - [Day 0](/day0) - Setup
-- [Day 1](/day1)
+- [Day 1](/day1) - Primitive Types and Declarations
+- [Day 2](/day2) - CSP Model
