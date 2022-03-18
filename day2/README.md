@@ -35,3 +35,5 @@
 - The only broadcast operation (1-to-N) is a **channel closure** that propagates an event received by multiple goroutines.
 
   
+
+[^Notes from the amazing book - [100 Go mistakes and how to avoid them](https://www.manning.com/books/100-go-mistakes-and-how-to-avoid-them) by [Teiva Harsanyi](https://teivah.github.io/)]:

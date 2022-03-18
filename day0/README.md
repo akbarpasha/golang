@@ -1,4 +1,4 @@
-# Day 0 - Setup
+# Setup
 
 ## Installing golang
 
@@ -71,4 +71,7 @@
 - `golint ./...` will lint the current directory and all of its subdirectories.
 - `go vet` is a tool that checks for common mistakes in Go code. Includes things like passing the wrong number of parameters to formatting methods or assigning values to variables that are never used.
 - `golangci-lint` combines `golint` and `go vet` into a single tool and an ever-increasing set of other code quality tools
-- 
+
+
+
+[^Notes from the amazing book - [Learning Go](https://www.oreilly.com/library/view/learning-go/9781492077206/) by [Jon Bodneri](https://medium.com/@jon_43067)]:

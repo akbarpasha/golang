@@ -1,4 +1,4 @@
-# Day 1 - Primitive Types and Declarations
+# Primitive Types and Declarations
 ### Zero Values
 - Go, like most modern languages, assigns a default zero value to any variable that is declared but not assigned a value.
 - The zero value of a numeric type is 0, for booleans it is false, and for strings it is the empty string.
@@ -119,3 +119,4 @@
 
 
 
+[^Notes from the amazing book - [Learning Go](https://www.oreilly.com/library/view/learning-go/9781492077206/) by [Jon Bodneri](https://medium.com/@jon_43067)]:
