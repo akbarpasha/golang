@@ -1,6 +1,7 @@
 # Day 0 - Setup
 
 ## Installing golang
+
 - To write go code we need to setup a go environment, with go development tools installed.
 - You can usually install the latest from [golang.org/dl](https://golang.org/dl/).
 - If you are on a mac, you can install golang from the [homebrew](https://brew.sh/) package manager.
