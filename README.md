@@ -6,3 +6,4 @@ This is not a complete tutorial, but a series of lessons that helped me learn go
 - [Day 0](/day0) - Setup
 - [Day 1](/day1) - Primitive Types and Declarations
 - [Day 2](/day2) - CSP Model
+- [Day 3](/day3) - Comparing Values
