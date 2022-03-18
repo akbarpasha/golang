@@ -119,4 +119,5 @@
 
 
 
-[^Notes from the amazing book - [Learning Go](https://www.oreilly.com/library/view/learning-go/9781492077206/) by [Jon Bodneri](https://medium.com/@jon_43067)]:
+Notes from the amazing book - [Learning Go](https://www.oreilly.com/library/view/learning-go/9781492077206/) by [Jon Bodneri](https://medium.com/@jon_43067)
+
